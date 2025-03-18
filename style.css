@@ -9,13 +9,22 @@ html,body{
     height: 100%;
     width: 100%;
 }
-
+#crsr{
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    border:1px solid rgba(255, 255, 255, 0.762);
+    position:fixed;
+    z-index: 99;
+    transform: translate(-50%,-50%);
+    mix-blend-mode: difference;
+}
 #loader{
     height: 100%;
     width: 100%;
     background-color: #0b0b0b;
     position:fixed;
-    z-index: 999;
+    z-index: 9999;
     padding: 25vh 10vw;
 }
 
@@ -95,4 +104,59 @@ html,body{
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:3.7vw 5vw;
+
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.9vw;
+}
+#nav-part2 h3{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.hero{
+    width:72%;
+    margin-left:28%;
+    /* background-color: red; */
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+}
+.hero:nth-child(2){
+    margin-top: 12vh;
+}
+.contain{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+.contain h1{
+    text-decoration: underline;
+}
+.contain h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color:transparent;
+    font-weight: 400;
+}
+.contain h2{
+    font-size: 7.5vw;
+    line-height: 7.3vw;
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size: 7.5vw;
+    line-height: 7.3vw;
+    text-transform: uppercase;
+    font-weight:600;
 }
